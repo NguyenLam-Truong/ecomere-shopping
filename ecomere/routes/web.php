@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use controller
 
+use App\Http\Controllers\sclient;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +14,4 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+route::get('/',[sclient::class,'index']);
